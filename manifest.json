@@ -3,6 +3,11 @@
   "name": "Calendar all select button",
   "version": "1.0.0",
   "description": "Google Calendar에서 왼쪽 캘린더 전체 토글 버튼을 추가합니다.",
+  "homepage_url": "https://github.com/type-types/google-calendar-calendar-all-select-button",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Calendar All Select Button"
+  },
   "content_scripts": [
     {
       "matches": ["https://calendar.google.com/*"],

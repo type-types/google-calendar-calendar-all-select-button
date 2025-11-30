@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendar All Select Button</title>
+  <style>
+    body {
+      width: 300px;
+      padding: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    h1 {
+      font-size: 18px;
+      margin: 0 0 8px 0;
+      font-weight: 600;
+    }
+    
+    .subtitle {
+      font-size: 13px;
+      opacity: 0.9;
+      margin: 0;
+    }
+    
+    .links {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 12px;
+      backdrop-filter: blur(10px);
+    }
+    
+    .link-item {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 6px 0;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    
+    .link-item:hover {
+      background: rgba(255, 255, 255, 0.25);
+      transform: translateX(4px);
+    }
+    
+    .link-icon {
+      font-size: 20px;
+      margin-right: 12px;
+      min-width: 24px;
+      text-align: center;
+    }
+    
+    .link-text {
+      flex: 1;
+    }
+    
+    .link-label {
+      font-size: 12px;
+      opacity: 0.8;
+      margin-bottom: 2px;
+    }
+    
+    .link-url {
+      font-size: 13px;
+      font-weight: 500;
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 16px;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+    
+    .divider {
+      height: 1px;
+      background: rgba(255, 255, 255, 0.2);
+      margin: 12px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>📅 Calendar All Select</h1>
+    <p class="subtitle">Google Calendar 전체 선택 도구</p>
+  </div>
+  
+  <div class="links">
+    <a class="link-item" href="https://github.com/type-types/google-calendar-calendar-all-select-button" target="_blank">
+      <div class="link-icon">🐙</div>
+      <div class="link-text">
+        <div class="link-label">GitHub Repository</div>
+        <div class="link-url">소스코드 & 이슈</div>
+      </div>
+    </a>
+    
+    <div class="divider"></div>
+    
+    <a class="link-item" href="https://buymeacoffee.com/type_types" target="_blank">
+      <div class="link-icon">☕</div>
+      <div class="link-text">
+        <div class="link-label">Buy Me a Coffee</div>
+        <div class="link-url">커피 한잔 사주기</div>
+      </div>
+    </a>
+    
+    <a class="link-item" href="https://github.com/type-types" target="_blank">
+      <div class="link-icon">👤</div>
+      <div class="link-text">
+        <div class="link-label">Developer</div>
+        <div class="link-url">개발자 프로필</div>
+      </div>
+    </a>
+    
+    <a class="link-item" href="https://instagram.com/type_types" target="_blank">
+      <div class="link-icon">📧</div>
+      <div class="link-text">
+        <div class="link-label">Business Contact</div>
+        <div class="link-url">@type_types (DM)</div>
+      </div>
+    </a>
+  </div>
+  
+  <div class="footer">
+    <p>Made with ❤️ by type-types</p>
+    <p style="font-size: 11px; margin-top: 4px;">v1.0.0</p>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
+

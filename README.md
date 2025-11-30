@@ -24,15 +24,22 @@ Google Calendar에서 왼쪽 사이드바의 모든 캘린더를 한 번에 선�
 ```
 calendar-all-select-button/
 ├── manifest.json       # 확장 프로그램 설정
-├── content.js         # 메인 로직
-└── README.md         # 이 파일
+├── content.js         # 메인 로직 (캘린더 페이지에 주입)
+├── popup.html         # 확장 프로그램 팝업 UI
+├── popup.js           # 팝업 로직
+└── README.md          # 이 파일
 ```
 
 ## 사용 방법
 
+### 캘린더 전체 선택
 1. Google Calendar를 엽니다
 2. 왼쪽 사이드바 "My calendars" 텍스트 옆에 **✓** 아이콘이 나타납니다
 3. **✓** 아이콘을 클릭하면 모든 캘린더가 선택되거나 해제됩니다
+
+### 개발자 정보 & 후원
+- Chrome 툴바의 확장 프로그램 아이콘을 클릭하면 팝업이 나타납니다
+- GitHub 저장소, 후원 링크 등을 확인할 수 있습니다
 
 ## 기술 스택
 
@@ -50,7 +57,24 @@ calendar-all-select-button/
 
 MIT
 
+## 후원하기 💖
+
+이 확장 프로그램이 유용하셨다면 후원을 고려해주세요!
+
+- ☕ [Buy Me a Coffee](https://buymeacoffee.com/type_types)
+
+## 기여하기
+
+버그 리포트, 기능 제안, Pull Request 모두 환영합니다!
+
+- 🐙 [GitHub Repository](https://github.com/type-types/google-calendar-calendar-all-select-button)
+- 📝 [Issues](https://github.com/type-types/google-calendar-calendar-all-select-button/issues)
+
 ## 개발자
 
-확장 프로그램 수정 및 개선 환영합니다!
+Made with ❤️ by [type-types](https://github.com/type-types)
+
+## 문의
+
+- 📧 Business Contact: [@type_types](https://instagram.com/type_types) (Instagram DM)
 
