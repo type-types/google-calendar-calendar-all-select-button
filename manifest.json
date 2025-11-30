@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Calendar all select button",
+  "version": "1.0.0",
+  "description": "Google Calendar에서 왼쪽 캘린더 전체 토글 버튼을 추가합니다.",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://calendar.google.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
+
