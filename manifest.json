@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Calendar all select button",
+  "name": "Google Calendar - Calendar all select button",
   "version": "1.0.0",
   "description": "Add a toggle button to select/deselect all calendars at once in Google Calendar.",
   "homepage_url": "https://github.com/type-types/google-calendar-calendar-all-select-button",
