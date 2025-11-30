@@ -1,4 +1,4 @@
-// 링크 클릭 시 새 탭에서 열기
+// Open links in new tab when clicked
 document.addEventListener('DOMContentLoaded', function() {
   const links = document.querySelectorAll('.link-item');
   

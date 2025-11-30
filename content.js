@@ -1,7 +1,7 @@
 // content.js
 
 (function () {
-  // 전체 토글 함수
+  // Toggle all calendars function
   function toggleAll() {
     const panel = document.querySelector('div[role="complementary"].qZvm2d-bN97Pc');
     if (!panel) return;
@@ -15,9 +15,9 @@
     });
   }
 
-  // My calendars 헤더에 ✓ 아이콘 추가
+  // Add ✓ icon to "My calendars" header
   function addIcon() {
-    const titleDiv = document.querySelector('div.aIwHYe'); // "My calendars" 텍스트
+    const titleDiv = document.querySelector('div.aIwHYe'); // "My calendars" text
     if (!titleDiv) return;
     const headerBtn = titleDiv.closest('button');
     if (!headerBtn) return;
@@ -40,10 +40,10 @@
     inner.appendChild(icon);
   }
 
-  // 초기 한 번
+  // Initial run
   addIcon();
 
-  // DOM이 바뀔 때마다 아이콘 없으면 다시 추가
+  // Re-add icon when DOM changes
   const observer = new MutationObserver(() => {
     addIcon();
   });

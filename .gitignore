@@ -1,0 +1,13 @@
+# 배포용 ZIP 파일
+*.zip
+
+# macOS
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# 로그
+*.log
+

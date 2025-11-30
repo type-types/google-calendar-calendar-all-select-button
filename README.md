@@ -1,80 +1,85 @@
 # Calendar All Select Button 📅
 
-Google Calendar에서 왼쪽 사이드바의 모든 캘린더를 한 번에 선택/해제할 수 있는 버튼을 추가하는 Chrome 확장 프로그램입니다.
+A Chrome extension that adds a toggle button to select/deselect all calendars at once in Google Calendar's left sidebar.
 
-## 기능
+## Features
 
-- ✅ "My calendars" 헤더에 체크마크(✓) 아이콘 추가
-- 🔄 모든 캘린더를 한 번에 선택/해제
-- 🎯 기존 UI에 자연스럽게 통합
+- ✅ Adds a checkmark (✓) icon next to the "My calendars" header
+- 🔄 Toggle all calendars on/off with a single click
+- 🎯 Seamlessly integrated into the existing UI
 
-## 설치 방법
+## Installation
 
-### 개발자 모드로 로드하기
+### Load as Unpacked Extension (Development)
 
-1. Chrome 브라우저를 엽니다
-2. 주소창에 `chrome://extensions/` 입력
-3. 오른쪽 상단의 **개발자 모드** 토글을 활성화
-4. **Load unpacked** (압축해제된 확장 프로그램을 로드합니다) 클릭
-5. 이 프로젝트 폴더 선택: `/Users/type/Dev Projects/google-calendar-calendar-all-select-button`
-6. Google Calendar (https://calendar.google.com) 방문
+1. Open Chrome browser
+2. Navigate to `chrome://extensions/`
+3. Enable **Developer mode** toggle in the top right
+4. Click **Load unpacked**
+5. Select this project folder
+6. Visit Google Calendar (https://calendar.google.com)
 
-## 파일 구조
+## File Structure
 
 ```
 calendar-all-select-button/
-├── manifest.json       # 확장 프로그램 설정
-├── content.js         # 메인 로직 (캘린더 페이지에 주입)
-├── popup.html         # 확장 프로그램 팝업 UI
-├── popup.js           # 팝업 로직
-└── README.md          # 이 파일
+├── manifest.json       # Extension configuration
+├── content.js         # Main logic (injected into calendar page)
+├── popup.html         # Extension popup UI
+├── popup.js           # Popup logic
+└── README.md          # This file
 ```
 
-## 사용 방법
+## Usage
 
-### 캘린더 전체 선택
-1. Google Calendar를 엽니다
-2. 왼쪽 사이드바 "My calendars" 텍스트 옆에 **✓** 아이콘이 나타납니다
-3. **✓** 아이콘을 클릭하면 모든 캘린더가 선택되거나 해제됩니다
+### Toggle All Calendars
+1. Open Google Calendar
+2. Look for the **✓** icon next to "My calendars" text in the left sidebar
+3. Click the **✓** icon to select/deselect all calendars at once
 
-### 개발자 정보 & 후원
-- Chrome 툴바의 확장 프로그램 아이콘을 클릭하면 팝업이 나타납니다
-- GitHub 저장소, 후원 링크 등을 확인할 수 있습니다
+### Developer Info & Support
+- Click the extension icon in Chrome toolbar to open the popup
+- View GitHub repository, support links, and more
 
-## 기술 스택
+## How It Works
+
+- **Smart Toggle Logic**: If any calendar is off → turn all on. If all are on → turn all off.
+- **Auto-Detection**: Automatically detects when the calendar list loads and adds the icon
+- **Dynamic Updates**: Re-adds the icon if the DOM changes (for SPA navigation)
+
+## Tech Stack
 
 - Manifest V3
 - Vanilla JavaScript
 - Chrome Extensions API
 
-## 주의사항
+## Notes
 
-- Google Calendar의 DOM 구조가 변경되면 작동하지 않을 수 있습니다
-- 첫 로드 시 아이콘이 나타나지 않으면 페이지를 새로고침해주세요
-- 확장 프로그램은 Chrome 기본 아이콘을 사용합니다
+- The extension may stop working if Google Calendar changes its DOM structure
+- If the icon doesn't appear on first load, refresh the page
+- The extension uses Chrome's default icon
 
-## 라이선스
+## License
 
 MIT
 
-## 후원하기 💖
+## Support 💖
 
-이 확장 프로그램이 유용하셨다면 후원을 고려해주세요!
+If you find this extension useful, please consider supporting the developer!
 
 - ☕ [Buy Me a Coffee](https://buymeacoffee.com/type_types)
 
-## 기여하기
+## Contributing
 
-버그 리포트, 기능 제안, Pull Request 모두 환영합니다!
+Bug reports, feature suggestions, and Pull Requests are all welcome!
 
 - 🐙 [GitHub Repository](https://github.com/type-types/google-calendar-calendar-all-select-button)
 - 📝 [Issues](https://github.com/type-types/google-calendar-calendar-all-select-button/issues)
 
-## 개발자
+## Developer
 
 Made with ❤️ by [type-types](https://github.com/type-types)
 
-## 문의
+## Contact
 
 - 📧 Business Contact: [@type_types](https://instagram.com/type_types) (Instagram DM)
-
